@@ -1,0 +1,9 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - docker build --pull --rm -f "Dockerfile" -t freonius/latex-full:latest "."
+    silent: true
